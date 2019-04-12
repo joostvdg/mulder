@@ -30,7 +30,8 @@ pipeline {
             sh "make preview"
             sh "jx preview --app $APP_NAME --namespace $PREVIEW_NAMESPACE  --dir ../.."
             
-	    sh "wget --server-response --output-document=/dev/null --timeout=60 --tries=10 --retry-connrefused http://mulder.$PREVIEW_NAMESPACE/"           
+	    sh "wget --server-response --output-document=/dev/null --timeout=60 --tries=10 --retry-connrefused http://mulder.$PREVIEW_NAMESPACE/"
+          }           
         }
       }
     }
