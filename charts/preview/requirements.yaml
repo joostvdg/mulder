@@ -10,7 +10,7 @@ dependencies:
   version: 2.3.92
 
 - alias: preview-redis
-  name: mulder-redis
+  name: redis
   repository: https://kubernetes-charts.storage.googleapis.com
   version: 6.1.0
 
